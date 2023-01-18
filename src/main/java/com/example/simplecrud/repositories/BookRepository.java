@@ -1,2 +1,9 @@
-package com.example.simplecrud.repositories;public interface BookRepository {
+package com.example.simplecrud.repositories;
+
+import com.example.simplecrud.entities.Book;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BookRepository extends CrudRepository<Book,Long> {
 }
